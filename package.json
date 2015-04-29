@@ -1,0 +1,20 @@
+{
+  "name": "expressHoganetc",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "bootstrap": "^3.3.4",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "hjs": "~0.0.6",
+    "hogan-express": "^0.5.2",
+    "less-middleware": "1.0.x",
+    "morgan": "~1.0.0",
+    "static-favicon": "~1.0.0"
+  }
+}
