@@ -8,8 +8,9 @@ var jquery = require('jquery');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var about = require('./routes/about')
-var contact = require('./routes/contact')
+var about = require('./routes/about');
+var contact = require('./routes/contact');
+var files = require('./routes/files');
 var app = express();
 
 // view engine setup
@@ -32,10 +33,11 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/about', about);
 app.use('/contact', contact);
+app.use('/files', files);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
+    var err = new Error(req.url + 'Not Found');
     err.status = 404;
     next(err);
 });
